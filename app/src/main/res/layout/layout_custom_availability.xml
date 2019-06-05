@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="360dp"
+    android:background="#81C784">
+
+    <TextView
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:text="AVAILABILITY"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:paddingTop="4dp"
+        android:background="#006400"
+        android:typeface="sans"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="15dp">
+            <CheckBox
+                android:id="@+id/avaMonday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monday" />
+            <CheckBox
+                android:id="@+id/avaTuesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:text="Tuesday" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="15dp">
+            <CheckBox
+                android:id="@+id/avaWednesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wednesday" />
+            <CheckBox
+                android:id="@+id/avaThursday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:text="Thursday" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="15dp">
+            <CheckBox
+                android:id="@+id/avaFriday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Friday" />
+            <CheckBox
+                android:id="@+id/avaSaturday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:text="Saturday" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center">
+            <CheckBox
+                android:id="@+id/avaSunday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sunday" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_height="25dp"
+                android:layout_width="100dp"
+                android:text="FROM    : "
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:typeface="sans" />
+            <EditText
+                android:id="@+id/fromEdit"
+                android:layout_height="28dp"
+                android:layout_width="wrap_content"
+                android:background="@drawable/edit_round"
+                android:hint="time"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:typeface="sans"
+                android:inputType="time"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_height="25dp"
+                android:layout_width="100dp"
+                android:text="TO          :"
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:typeface="sans" />
+            <EditText
+                android:id="@+id/toEdit"
+                android:layout_height="28dp"
+                android:layout_width="wrap_content"
+                android:background="@drawable/edit_round"
+                android:hint="time"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:typeface="sans"
+                android:inputType="time"/>
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

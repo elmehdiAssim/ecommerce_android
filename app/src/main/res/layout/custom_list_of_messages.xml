@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card_view"
+    android:layout_margin="5dp"
+    card_view:cardBackgroundColor="#fff"
+    card_view:cardCornerRadius="12dp"
+    card_view:cardElevation="3dp"
+    card_view:contentPadding="4dp"
+    android:clickable="true" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/item_image"
+                android:textStyle="bold"
+                android:text="From : "
+                android:textColor="#000"
+                 />
+
+            <TextView
+                android:id="@+id/senderText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/fullNameReview"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/item_image"
+                android:textStyle="italic"
+                android:textSize="11dp"
+                android:text="the sender"
+                android:textColor="#000" />
+
+        </TableRow>
+        <TableRow>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:src="@drawable/date2"/>
+
+            <TextView
+                android:id="@+id/sendingDateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/item_image"
+                android:layout_below="@+id/fullNameReview"
+                android:textStyle="italic"
+                android:textSize="11dp"
+                android:textColor="#000"
+                android:text="sendingDate"/>
+        </TableRow>
+        <TableRow>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:src="@drawable/msg5"/>
+
+            <TextView
+                android:id="@+id/msgText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/item_image"
+                android:layout_below="@+id/fullNameReview"
+                android:textSize="11dp"
+                android:textStyle="bold"
+                android:textColor="@color/green"
+                android:text="Message Text"/>
+        </TableRow>
+
+    </TableLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/niceBlue"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="#fff"
+        android:text="SERVICE"
+        android:paddingLeft="21dp"/>
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="#fff"
+        android:text="fill in information and confirm"
+        android:paddingLeft="21dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/serviceName"
+            android:layout_marginTop="6dp"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:textColorHint="@color/lightGrey"
+            android:background="@drawable/edit_round"
+            android:layout_gravity="center_horizontal"
+            android:hint="service name"
+            android:gravity="center_vertical|center_horizontal"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/rate"
+            android:layout_marginTop="20dp"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:textColorHint="@color/lightGrey"
+            android:background="@drawable/edit_round"
+            android:layout_gravity="center_horizontal"
+            android:hint="rate (DH / hour)"
+            android:gravity="center_vertical|center_horizontal"
+            android:inputType="number" />
+
+        <Spinner
+            android:id="@+id/experience"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:background="@drawable/spinner_background"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="24dp"
+            android:padding="12dp"
+            android:background="@drawable/button_profile"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#fff"
+            android:text="add" />
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
